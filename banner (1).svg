@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Browser technology illustration</title>
+  <desc id="desc">A stylized browser window with code blocks, a shield, and network nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#d8e4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="28" fill="url(#bg)"/>
+  <rect x="90" y="80" width="620" height="330" rx="20" fill="#ffffff" stroke="#b8c9ef" stroke-width="6"/>
+  <rect x="90" y="80" width="620" height="56" rx="20" fill="#1f3c88"/>
+  <circle cx="132" cy="108" r="10" fill="#ffd54f"/>
+  <circle cx="164" cy="108" r="10" fill="#ffffff" opacity="0.8"/>
+  <circle cx="196" cy="108" r="10" fill="#8fb3ff"/>
+  <rect x="140" y="172" width="210" height="24" rx="12" fill="#dfe8f7"/>
+  <rect x="140" y="214" width="300" height="18" rx="9" fill="#edf2fb"/>
+  <rect x="140" y="248" width="270" height="18" rx="9" fill="#edf2fb"/>
+  <rect x="140" y="282" width="230" height="18" rx="9" fill="#edf2fb"/>
+  <rect x="470" y="175" width="180" height="120" rx="16" fill="#eef4ff" stroke="#b8c9ef" stroke-width="4"/>
+  <text x="495" y="215" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#1f3c88">&lt;HTML&gt;</text>
+  <text x="495" y="250" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#3159bd">CSS</text>
+  <text x="495" y="285" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#4d6fc7">JS</text>
+  <path d="M580 355l28 12 14 36-42 26-42-26 14-36z" fill="#1f3c88" opacity="0.95"/>
+  <path d="M580 370l15 7 7 19-22 13-22-13 7-19z" fill="#ffd54f"/>
+  <circle cx="130" cy="454" r="18" fill="#1f3c88"/>
+  <circle cx="236" cy="454" r="18" fill="#1f3c88"/>
+  <circle cx="342" cy="454" r="18" fill="#1f3c88"/>
+  <line x1="148" y1="454" x2="218" y2="454" stroke="#1f3c88" stroke-width="8"/>
+  <line x1="254" y1="454" x2="324" y2="454" stroke="#1f3c88" stroke-width="8"/>
+  <text x="385" y="462" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#1f3c88">DNS → HTTPS → Render</text>
+</svg>

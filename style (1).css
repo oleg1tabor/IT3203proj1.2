@@ -1,0 +1,316 @@
+/*
+    Shared stylesheet for the IT 3203 milestone site.
+    The styles below support consistent navigation, layout, and quiz formatting.
+*/
+
+:root {
+    --primary: #1f3c88;
+    --primary-dark: #0f2557;
+    --accent: #ffd54f;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --border: #d5dce5;
+    --muted: #5c6675;
+    --success: #1b7f3c;
+    --danger: #b42318;
+    --success-bg: #ecfdf3;
+    --danger-bg: #fef3f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(180deg, #eef3fb 0%, var(--bg) 240px);
+    color: #222;
+}
+
+#site-header {
+    background: linear-gradient(135deg, var(--primary) 0%, #3159bd 100%);
+    color: white;
+    padding: 28px 0 22px;
+    border-bottom: 4px solid #16306d;
+}
+
+.container {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--primary-dark);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 999px;
+    display: inline-block;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--accent);
+    color: #111;
+    transform: translateY(-1px);
+}
+
+main {
+    padding: 28px 0 40px;
+}
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+    box-shadow: 0 10px 24px rgba(31, 60, 136, 0.07);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+h1 {
+  color: #34495e;
+}
+
+h2, h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    border: 1px solid #c8d0da;
+    border-radius: 14px;
+    padding: 4px;
+    background-color: white;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #bfc7d2;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #dfe8f7;
+}
+
+.highlight {
+    background-color: #eef4ff;
+    border-left: 5px solid var(--primary);
+    padding: 12px 14px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.key-terms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+}
+
+.term-box {
+    border: 1px solid #c7d4ea;
+    background-color: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.section-label {
+    display: inline-block;
+    background-color: #e8efff;
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.button-link,
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.button-link:hover,
+button:hover {
+    transform: translateY(-1px);
+    opacity: 0.94;
+}
+
+.button-link-secondary,
+#resetQuiz {
+    background-color: #596579;
+}
+
+.question-block {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 18px;
+    background-color: #fafcff;
+}
+
+.question-block label {
+    display: block;
+    margin: 8px 0;
+}
+
+fieldset.question-block {
+    min-width: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #b9c4d3;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.results-panel {
+    border-top: 6px solid var(--primary);
+}
+
+.hidden {
+    display: none;
+}
+
+.result-item {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.correct {
+    background-color: var(--success-bg);
+    border-color: #8dd4a4;
+}
+
+.incorrect {
+    background-color: var(--danger-bg);
+    border-color: #efb0aa;
+}
+
+.pass {
+    color: var(--success);
+    font-weight: bold;
+}
+
+.fail {
+    color: var(--danger);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 18px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: var(--accent);
+}
+
+.small-note {
+    font-size: 0.95rem;
+}
+
+.caption {
+    font-size: 0.92rem;
+    color: #444;
+    margin-top: 6px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.about-list li,
+.references-list li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+}

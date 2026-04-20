@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="site-header">
+        <div class="container">
+            <h1>Google Chrome and Modern Web Browsing</h1>
+            <p class="small-note">IT 3203 Milestone 2 Website Project</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browsers.html">How Browsers Work</a></li>
+                <li><a href="chrome-tech.html">Chrome Technology</a></li>
+                <li><a href="history.html">History &amp; Impact</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section class="card">
+                <span class="section-label">Self-Assessment</span>
+                <h2>Quiz: Test Your Knowledge</h2>
+                <p>
+                    Complete the quiz below after reading the site content. This quiz includes one fill in the blank question, three multiple-choice questions, and one multi-selection question.
+                </p>
+            </section>
+            <section class="card">
+                <form id="quizForm" novalidate>
+                    <div class="question-block">
+                        <label for="q1"><strong>1. Fill in the blank:</strong> Chrome uses the <em>_____</em> rendering engine to display HTML and CSS.</label>
+                        <input type="text" id="q1" name="q1" placeholder="Type your answer here">
+                    </div>
+                    <fieldset class="question-block">
+                        <legend><strong>2. Multiple choice:</strong> What system helps a browser find the correct server for a website?</legend>
+                        <label><input type="radio" name="q2" value="A"> A. CSS</label>
+                        <label><input type="radio" name="q2" value="B"> B. DNS</label>
+                        <label><input type="radio" name="q2" value="C"> C. V8</label>
+                        <label><input type="radio" name="q2" value="D"> D. Cache</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend><strong>3. Multiple choice:</strong> Which Chrome component executes JavaScript quickly?</legend>
+                        <label><input type="radio" name="q3" value="A"> A. Blink</label>
+                        <label><input type="radio" name="q3" value="B"> B. HTTPS</label>
+                        <label><input type="radio" name="q3" value="C"> C. V8</label>
+                        <label><input type="radio" name="q3" value="D"> D. DNS</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend><strong>4. Multiple choice:</strong> Why is sandboxing important in Chrome?</legend>
+                        <label><input type="radio" name="q4" value="A"> A. It changes font sizes automatically</label>
+                        <label><input type="radio" name="q4" value="B"> B. It stores bookmarks in the cloud</label>
+                        <label><input type="radio" name="q4" value="C"> C. It limits what webpages can access</label>
+                        <label><input type="radio" name="q4" value="D"> D. It replaces HTML with JavaScript</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend><strong>5. Multi-selection:</strong> Which of the following are true about modern browsers? <span class="small-note">Select all correct answers.</span></legend>
+                        <label><input type="checkbox" name="q5" value="A"> A. They can process HTML and CSS</label>
+                        <label><input type="checkbox" name="q5" value="B"> B. They can run JavaScript</label>
+                        <label><input type="checkbox" name="q5" value="C"> C. They never use security protections</label>
+                        <label><input type="checkbox" name="q5" value="D"> D. They can use HTTPS for secure communication</label>
+                    </fieldset>
+                    <div class="button-row">
+                        <button type="submit">Submit Quiz</button>
+                        <button type="button" id="resetQuiz">Retake / Reset</button>
+                    </div>
+                </form>
+            </section>
+            <section class="card results-panel hidden" id="results">
+                <h2>Quiz Results</h2>
+                <p id="overallResult"></p>
+                <p id="totalScore"></p>
+                <div id="questionResults"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>This is a class project for IT 3203.</p>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>

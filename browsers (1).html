@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Browsers Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="site-header">
+        <div class="container">
+            <h1>Google Chrome and Modern Web Browsing</h1>
+            <p class="small-note">IT 3203 Milestone 2 Website Project</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browsers.html">How Browsers Work</a></li>
+                <li><a href="chrome-tech.html">Chrome Technology</a></li>
+                <li><a href="history.html">History &amp; Impact</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section class="card">
+                <span class="section-label">Core Topic</span>
+                <h2>How Browsers Work</h2>
+                <p>
+                    A browser is the software layer between a user and the World Wide Web. When someone types a URL or clicks a link,
+                    the browser finds the correct server, requests the needed resources, interprets code, and displays the final page.
+                    This process happens very quickly, but it involves several major technologies working together.
+                </p>
+                <div class="highlight">
+                    Browsers make the web usable by turning code, files, and network responses into a visual and interactive experience.
+                </div>
+            </section>
+
+            <section class="card two-column">
+                <div>
+                    <h3>Step 1: Finding the Server</h3>
+                    <p>
+                        When a user enters a URL, the browser uses the Domain Name System (DNS) to locate the correct server. DNS works like
+                        an internet phone book by matching a domain name to an IP address.
+                    </p>
+                    <h3>Step 2: Sending the Request</h3>
+                    <p>
+                        After the server is found, the browser sends an HTTP or HTTPS request asking for webpage files such as HTML, CSS,
+                        JavaScript, images, fonts, and videos.
+                    </p>
+                </div>
+                <div>
+                    <h3>Step 3: Rendering the Page</h3>
+                    <p>
+                        The server responds with webpage resources. The browser reads the HTML structure, applies CSS styling, and runs
+                        JavaScript so the page can display content and respond to user actions.
+                    </p>
+                    <h3>Step 4: Managing Speed and Security</h3>
+                    <p>
+                        Modern browsers also handle caching, cookies, permissions, certificates, and secure connections. These features
+                        help websites load faster and protect users while browsing.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Basic Browser Process Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stage</th>
+                            <th>What the Browser Does</th>
+                            <th>Main Technology</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Locate</td>
+                            <td>Finds the correct server for the requested website</td>
+                            <td>DNS</td>
+                        </tr>
+                        <tr>
+                            <td>Request</td>
+                            <td>Asks for webpage resources from the server</td>
+                            <td>HTTP / HTTPS</td>
+                        </tr>
+                        <tr>
+                            <td>Interpret</td>
+                            <td>Processes HTML, CSS, and JavaScript</td>
+                            <td>Rendering engine and JavaScript engine</td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>Shows text, images, layout, and interactive features</td>
+                            <td>Browser interface</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Why This Matters</h2>
+                <ul>
+                    <li>Without browsers, webpages would appear as raw code instead of readable content.</li>
+                    <li>Browsers support modern services such as email, banking, streaming, and online learning.</li>
+                    <li>Security features such as HTTPS, certificate checks, and permission controls help protect users.</li>
+                    <li>Fast browsers improve user experience and make advanced web applications possible.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>This is a class project for IT 3203.</p>
+        </div>
+    </footer>
+</body>
+</html>
